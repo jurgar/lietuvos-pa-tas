@@ -1,2 +1,2 @@
-# lietuvos-pa-tas
+# lietuvos-pastas
 lietuvos pastas

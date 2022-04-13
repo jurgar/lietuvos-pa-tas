@@ -101,11 +101,12 @@ a, button{
 .cards {
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
 
 }
 .card {
-  margin: 16px;
-  width: 47%;
+  margin-bottom: 16px;
+  width: 49%;
   border:1px solid #e3e3e3;
   border-radius: 5px;
   padding-bottom: 16px;
@@ -119,16 +120,57 @@ a, button{
   padding: 16px;
 }
 
+.mini {
+  width: 30%;
+}
+
+footer{
+  padding: 60px 40px;
+}
+.footer-navigation {
+  display: flex;
+}
+ .nav-column ul{
+   padding-left: 13px;
+
+ }
+.nav-column{
+  width: 25%;
+}
+.nav-column  ul, li, a{
+  color:#616161
+
+}
+.social{
+  text-align: center;
+  margin-top:px ;
+}
+
+.social a{
+  font-size:px ;
+  margin:  auto;
+  color:#616161;
+}
+
+
+.social a:hover{
+  apacity: 0.8;
+}
 @media screen and (max-width:768px) {
   .black-header {
    justify-content: center;
    
   }
-    .black-header a{
-      font-size: 15px;
+      /* font-size: 15px;
     }
+    .footer-navigation{
+      display: flex;
+    }
+     .nav-column ul{
+       padding-left: 13px;
 
-
+     }
+      */
   
   .black-header .info-side{
     display:none;
@@ -142,7 +184,6 @@ a, button{
     margin-bottom: 16px;
   }
     
-
   .white-header button{
     padding: 16px 24px;
     font-size: 18px;
@@ -151,14 +192,19 @@ a, button{
     height: 35vh;
   }
 
-
-    .cards{
-      flex-direction: column;
-    }
+    
 
     .card{
       width: 100%;
       margin:8px 0;
       
+    }
+
+    .mini{
+      width: 48%;
+    }
+
+    .footer-navigation{
+      display: none;
     }
 }
